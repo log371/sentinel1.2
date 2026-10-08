@@ -102,11 +102,11 @@ Le retriever lexical léger rend le dépôt immédiatement exécutable sans serv
 
 ## Dépôt GitHub
 
-Le projet est publié sur <https://github.com/log371/sentinel1.2>. Pour relier cette copie locale :
+Le projet est publié sur <https://github.com/log371/sentinel1.2>. Pour le récupérer :
 
 ```bash
-git remote add origin https://github.com/log371/sentinel1.2.git
-git fetch origin
+git clone https://github.com/log371/sentinel1.2.git
+cd sentinel1.2
 ```
 
 ## Licence
