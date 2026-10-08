@@ -100,16 +100,13 @@ Réponse + citations ← fournisseur LLM interchangeable ← recherche top-k
 
 Le retriever lexical léger rend le dépôt immédiatement exécutable sans service externe. L'interface `LLMProvider` permet de remplacer le fournisseur ; la prochaine étape naturelle consiste à introduire des embeddings et une base vectorielle derrière une interface similaire.
 
-## Publier sur GitHub
+## Dépôt GitHub
 
-Créez d'abord un dépôt vide nommé `sentinelia-document-intelligence`, puis depuis ce dossier :
+Le projet est publié sur <https://github.com/log371/sentinel1.2>. Pour relier cette copie locale :
 
 ```bash
-git init -b main
-git add .
-git commit -m 'feat: initial document intelligence demo'
-git remote add origin git@github.com:log371/sentinelia-document-intelligence.git
-git push -u origin main
+git remote add origin https://github.com/log371/sentinel1.2.git
+git fetch origin
 ```
 
 ## Licence
