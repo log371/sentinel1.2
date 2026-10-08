@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      LLM_PROVIDER: ollama
+      LLM_MODEL: mistral
+      LLM_BASE_URL: http://ollama:11434
+    volumes:
+      - uploads:/app/data/uploads
+    depends_on:
+      ollama:
+        condition: service_started
+    restart: unless-stopped
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  ollama:
+    image: ollama/ollama:0.12.6
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  uploads:
+  ollama:
+
